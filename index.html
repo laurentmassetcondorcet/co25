@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours ouverts JavaScript</title>
+    <link href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container pt-2 mt-3">
+        <h1>Atelier JavaScript</h1>
+        <div class="row p-3">
+            <!--Rendu-->
+            <div id="rendu" class="col-sm-8 border">
+            </div>
+
+            <!--Formulaire-->
+            <div class="col-sm-4 border">
+                <!--Switch pour le mode sombre-->
+                <div class="mb-3">
+                    <div class="form-check form-switch">
+                        <input id="mode_sombre_switch" 
+                               name="mode_sombre_switch"
+                               class="form-check-input" 
+                               type="checkbox" 
+                                />
+                        <label for="mode_sombre_switch" 
+                               class="form-check-label">
+                               Mode sombre
+                        </label>
+                    </div>
+                </div>
+                <!--Contenu d'un paragraphe-->
+                <div class="mb-3">
+                    <label for="p_text" 
+                           class="form-label">
+                           Contenu du paragraphe
+                    </label>
+                    <textarea id="p_text" 
+                              name="p_text" 
+                              class="form-control">
+                    </textarea>
+                </div>
+                <!--Couleur d'un paragraphe-->
+                <div class="mb-3">
+                    <label for="couleur" 
+                           class="form-label">
+                           Couleur du texte
+                    </label>
+                    <select id="couleur" name="couleur" class="form-select">
+                        <option value="black" selected="selected">Noir</option>
+                        <option value="red">Rouge</option>
+                        <option value="green">Vert</option>
+                    </select>
+                </div>
+                <!--Bouton d'ajout d'un paragraphe-->
+                <div class="mb-3">
+                    <button id="ajouter_p_btn" 
+                            class="btn btn-primary">
+                            Ajoutez un paragraphe
+                    </button>
+                </div>
+
+                <!--Adresse URL d'une image-->
+                <div class="mb-3">
+                    <label for="url" 
+                           class="form-label">
+                           URL d'une image
+                    </label>
+                    <input id="url" 
+                           name="url" 
+                           type="text" 
+                           class="form-control" />
+                </div>
+                <!--Bouton d'ajout d'une image-->
+                <div class="mb-3">
+                    <button id="ajouter_img_btn" 
+                            class="btn btn-primary">
+                            Ajoutez une image
+                    </button>
+                </div>
+                <!--Bouton pour vider le rendu-->
+                <div class="mb-3">
+                    <button id="vider_btn" class="btn btn-danger">Vider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
